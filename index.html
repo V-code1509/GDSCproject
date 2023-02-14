@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link href='https://fonts.googleapis.com/css?family=Roboto Condensed' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <link rel="stylesheet" href="stylesgdsc.css">
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+   <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Weather Forecast</title>
+</head>
+<body>
+<header class="container">
+<nav id="nav" class="flex font-poppins">
+    <div class="flex-intial">
+        <ul class="flex">
+          <button class="mx btn">
+            <span class="glyphicon glyphicon-th-large"></span>
+          </button>
+          <button class="size btn">
+            <i class="fa fa-home"></i>
+          </button>
+          <a href="#" class="link"><i class=" my fa fa-map-marker"></i>Delhi, India</a>
+          <div class="dropdown">
+            <form>
+              <input type="text" placeholder="Search City..." class="search">
+            </form>
+          <div class="dropdown-content">
+            <a href="#" style="font-family: Roboto Condensed; font-size: 18px;">California,USA<span style="margin-left: 40.5rem; font-size: 12px; color: red;">Remove</span></a>
+            <a href="#" style="font-family: Roboto Condensed; font-size: 18px;">Mumbai,India<span style="margin-left: 41rem; font-size: 12px; color: red;">Remove</span></a>
+            <a href="#" style="font-family: Roboto Condensed; font-size: 18px;">Bejing,China<span style="margin-left: 42rem; font-size: 12px; color: red;">Remove</span></a>
+          </div>
+        </div>
+          <button id="myButton" class="mx-1 btn">
+            <i class="fa fa-sun-o"></i>
+           </button>
+           <script>
+            document.getElementById("myButton").addEventListener("click", function() {
+              document.body.style.backgroundColor = "rgb(173, 181, 179)";
+            });
+          </script>
+          <button id="myButton2" class="mx-2 btn">
+            <i class="fa fa-moon-o"></i>
+          </button>
+          <script>
+            document.getElementById("myButton2").addEventListener("click", function() {
+              document.body.style.backgroundColor = "black";
+            });
+          </script>
+          <button class="mx-3 btn" onclick='window.open("login.html","_self")'>
+            <i class='fa fa-user-circle'></i>
+          </button>
+        </ul>
+      </div>  
+</nav>
+<div>
+<ul class="flex">
+    <a href="#" class="mx-a a-style">Today</a>
+    <a href="#" class="a-style">Tomorrow</a>
+    <a href="#" style="color: white;" class="a-style">Next 7 days</a>
+    <button class="btn-primary">Forecast</button>
+    <button class="mx-btn btn-primary-1">Air quality</button>
+    <h2 class="rain-style">Chances of rain</h2>
+    </ul>
+    <img src="./picturesgdsc/BAR GRAPH.png" class="bar-style">
+</div>
+<div class="row">
+    <div class="column-1">
+        <div class="diff-bg">
+        <h2 style="font-family: 'Roboto Condensed'; font-size: 25px; margin-left: 2rem;">Monday<span class="space-mon">11:42 PM</span></h2>
+        <h1 style="font-size: 45px; font-family: 'Roboto Condensed'; font-weight: bolder;" class="mon-style">16<span>&#176;</span></h1>
+        <img src="./picturesgdsc/mon.png" class="mon-img-style">
+        <div class="mon-text-style">
+        <h3 style="font-family: 'Roboto Condensed'; font-size: 18px; margin-left: 2rem;"><span style="color: rgb(138, 140, 140);">Real Feel</span> 18<span>&#176;</span></h3>
+        <h3 style="font-family: 'Roboto Condensed'; font-size: 18px; margin-left: 2rem;"><span style="color: rgb(138, 140, 140);">Wind N-E</span> 5-8km/h</h3>  
+        <h3 style="font-family: 'Roboto Condensed'; font-size: 18px; margin-left: 2rem;"><span style="color: rgb(138, 140, 140);">Pressure</span> 1000MB</h3>
+        <h3 style="font-family: 'Roboto Condensed'; font-size: 18px; margin-left: 2rem;"><span style="color: rgb(138, 140, 140);">Humidity</span> 51%</h3> 
+    </div>
+    </div>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Tue</h2>
+        <img src="./picturesgdsc/tues.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">18<span>&#176;</span></h1>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Wed</h2>
+        <img src="./picturesgdsc/wed.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">20<span>&#176;</span></h1>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Thu</h2>
+        <img src="./picturesgdsc/thu.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">15<span>&#176;</span></h1>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Fri</h2>
+        <img src="./picturesgdsc/fri.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">16<span>&#176;</span></h1>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Sat</h2>
+        <img src="./picturesgdsc/sat.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">12<span>&#176;</span></h1>
+    </div>
+    <div class="column">
+        <h2 style="margin-left: 3.5rem; font-size: 29px; font-family: 'Roboto Condensed';">Sun</h2>
+        <img src="./picturesgdsc/sun.png" class="day-style">
+        <h1 class="degree-design" style="font-family: 'Roboto Condensed'; font-size: 40px;">24<span>&#176;</span></h1>
+    </div>
+</div>
+<br>
+<div class="header-area">
+    <ul>
+        <h1 style="display: inline; font-size: 21px; color: white;">Global Map</h1>
+        <button style="display: inline;" class="view-btn">View wide<span class="fa fa-cogs" style="margin-left: 1rem;"></span></button>
+        <h1 style="display: inline; font-size: 21px; color: white; margin-left: 4rem;">Other large cities</h1>
+        <a style="display: inline; font-size: 16px; margin-left: 7rem; color: rgb(197, 222, 224);"><span>Show all</span><span style="margin-left: 0.5rem;">></span></a>
+    </ul>
+</div>
+<div class="row-2">
+    <div class="column-last">
+    <h2 style="font-family: Roboto Condensed; font-size: 20px; color: rgb(151, 169, 167); margin-left: 2rem; padding-left: 1.5rem; padding-top: 2rem;">US</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 27px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">California</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 19px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">Mostly sunny</h2>
+    <img src="./picturesgdsc/us.png" class="us-style">
+    <h1 style="font-family: Roboto Condensed; margin-left: 24rem; margin-top: -6.5rem;">32<span>&#176;</span></h1>
+</div><br>
+<div class="column-last" style="margin-top: -2rem !important;">
+    <h2 style="font-family: Roboto Condensed; font-size: 20px; color: rgb(151, 169, 167); margin-left: 2rem; padding-left: 1.5rem; padding-top: 2rem;">China</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 27px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">Beijing</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 19px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">Cloudy</h2>
+    <img src="./picturesgdsc/china.png" class="us-style">
+    <h1 style="font-family: Roboto Condensed; margin-left: 24rem; margin-top: -6.5rem;">18<span>&#176;</span></h1>
+</div><br>
+<div class="column-last" style="margin-top: -2rem !important;">
+    <h2 style="font-family: Roboto Condensed; font-size: 20px; color: rgb(151, 169, 167); margin-left: 2rem; padding-left: 1.5rem; padding-top: 2rem;">India</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 27px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">Delhi</h2>
+    <h2 style="font-family: Roboto Condensed; font-size: 19px; color: white; margin-left: 2rem; padding-left: 1.5rem; padding-top: 0rem;">Sunny</h2>
+    <img src="./picturesgdsc/india.png" class="us-style">
+    <h1 style="font-family: Roboto Condensed; margin-left: 24rem; margin-top: -6.5rem;">29<span>&#176;</span></h1>
+</div><br>
+</div>
+<img src="./picturesgdsc/world map.png" class="world-map" style="float: left;">
+</header>
+<br>
+<div class="same-line">
+<h1 style="font-size: 20px; margin-left: 5rem;">Site Map</h1>
+<h1 style="font-size: 20px; margin-left: 110rem;" >We are on social media</h1>
+</div>
+<ul class="bottom-style">
+    <a href="#" style="color: rgb(113, 127, 123);">Home</a>
+    <a href="#" style="color: rgb(113, 127, 123); margin-left: 8rem;">About us</a>
+    <a href="#" style="color: rgb(113, 127, 123); margin-left: 8rem;">Contact us</a><br><br>
+    <a href="#" style="color: rgb(113, 127, 123);">Services</a>
+    <a href="#" style="color: rgb(113, 127, 123); margin-left: 5.5rem;">Try premium</a>
+</ul>
+<div class="web-icons">
+<button style="border-radius: 50%; background-color: rgb(187, 199, 199); border: none;" onclick='window.open("https://web.telegram.org/k/","_self")'><span class="fa fa-paper-plane-o"></span></button>
+<button style="border: none; border-radius: 50%; background-color: rgb(142, 147, 243); font-size: 30px;" onclick='window.open("https://twitter.com/i/flow/login?input_flow_data=%7B%22requested_variant%22%3A%22eyJsYW5nIjoiZW4ifQ%3D%3D%22%7D","_self")'><span class="fa fa-twitter-square"></span></button>
+<button style="border: none; border-radius: 50%; background-color: blue; padding-left: 1rem; padding-right: 1rem;" onclick='window.open("https://www.facebook.com/campaign/landing.php?campaign_id=14884913640&extra_1=s%7Cc%7C550525804791%7Cb%7Cfacebook%20%27%7C&placement=&creative=550525804791&keyword=facebook%20%27&partner_id=googlesem&extra_2=campaignid%3D14884913640%26adgroupid%3D128696220912%26matchtype%3Db%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-327195741349%26loc_physical_ms%3D9061709%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D","_self")'><span class="fa fa-facebook-f"></span></button>
+<button style="border: none; border-radius: 50%; background-color: rgb(107, 107, 102);" onclick='window.open("https://web.whatsapp.com/","_self")'><span class="fa fa-whatsapp"></span></button>
+</div>
+<a href="#" style="font-size: 15px; margin-left: 123rem; margin-top: 18rem !important;">Private Policy</a>
+<a href="#" style="font-size: 15px; margin-left: 7rem;">Terms & Conditions</a>
+<button onclick="topFunction()" id="myBtn" class="get-started"><a class="return" style="font-family: Roboto Condensed; color: black;">Return Home</a></button>
+<script>
+    window.onscroll = function() {scrollFunction()};
+    function scrollFunction() {
+      if (document.body.scrollTop > 680 || document.documentElement.scrollTop > 680) {
+        document.getElementById("myBtn").style.display = "block";
+      } else {
+        document.getElementById("myBtn").style.display = "none";
+      }
+    }
+    
+    function topFunction() {
+      // Set the scroll duration and behavior options
+      const options = {
+        top: 0,
+        left: 0,
+        behavior: 'smooth'
+      };
+      
+      // Call the scroll() method on the document element with the options
+      document.documentElement.scroll(options);
+    }
+    </script>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+</body>
+</html>
